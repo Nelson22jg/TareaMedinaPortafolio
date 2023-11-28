@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    text-align: center; /* Centra los elementos de la barra de navegación */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #fff; /* Añadir borde para dar apariencia de botón */
+    border-radius: 5px;
+    color: #111010;
+    background-color: transparent; /* Fondo transparente para el efecto de botón */
+}
+
+nav a:hover {
+    background-color: #0e0d0d;
+    color: #ece3e3; /* Cambiar el color de texto al pasar el ratón sobre el botón */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#presentacion {
+    text-align: center;
+}
+
+#presentacion h1 {
+    margin-bottom: 10px;
+}
+
+#presentacion p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#habilidades {
+    text-align: center; /* Centra el texto "Habilidades" */
+}
+
+#habilidades h2 {
+    margin-bottom: 20px; /* Añade espacio inferior para separar el título de la lista de habilidades */
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+#habilidades li {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.proyectos-grid a {
+    display: block;
+}
+
+.proyectos-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#contacto {
+    text-align: center;
+}
+
+.logo-github {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proyectos-grid img {
+        width: 100%;
+    }
+}

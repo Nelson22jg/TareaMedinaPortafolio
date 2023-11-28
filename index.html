@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Gutierrez - Portafolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#presentacion">Presentación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de presentación -->
+    <section id="presentacion">
+        <h1>Nelson Gutierrez</h1>
+        <p>Estudiante de Ingeniería Informática en URBE</p>
+        <p>Me llamo Nelson Gutierrez y actualmente estoy inmerso en el fascinante mundo de la Ingeniería Informática en la URBE. Mi pasión por la tecnología me ha llevado a explorar diversos campos, desde el desarrollo web hasta la programación en Java y Python, así como la gestión de bases de datos con MySQL.</p>
+        <p>Considero que cada línea de código es una oportunidad para aprender y mejorar. Mi enfoque se centra en el aprendizaje continuo y en enfrentar nuevos desafíos con entusiasmo. Creo en la colaboración y la creatividad como elementos fundamentales en el mundo del desarrollo de software.</p>
+        <p>A lo largo de mi trayectoria, he trabajado en varios proyectos que no solo han fortalecido mis habilidades, sino que también han buscado soluciones innovadoras y eficientes. Mi objetivo es fusionar el conocimiento teórico con la práctica, creando soluciones tecnológicas que destaquen por su calidad y eficacia.</p>
+        <p>Te invito a explorar mi portafolio, donde encontrarás una muestra de los proyectos en los que he trabajado. ¡Estoy emocionado por compartir mi viaje en el desarrollo de software contigo!</p>
+    </section>
+
+    <!-- Sección de habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <!-- Agrega más habilidades según sea necesario -->
+        </ul>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos" class="container">
+        <h2>Proyectos</h2>
+        <div class="proyectos-grid">
+
+        <!-- Proyecto 1 -->
+        <a href="https://nelson22jg.github.io/TareaMedina/" target="_blank">
+            <img src="img/thomas edison 2.png" alt="Proyecto 1">
+        </a>
+
+        <!-- Proyecto 2 -->
+        <a href="https://nelson22jg.github.io/TareaMedina1/" target="_blank">
+            <img src="img/alan-turing_903af6fe_1280x1569.jpg" alt="Proyecto 2">
+        </a>
+
+        <!-- Proyecto 3 -->
+        <a href="https://nelson22jg.github.io/TareaMedinaPaginaRetro1/" target="_blank">
+            <img src="img/70.jpg" alt="Proyecto 3">
+        </a>
+
+        <!-- Proyecto 4 -->
+        <a href="https://nelson22jg.github.io/TareaMedinaPaginaLibre/" target="_blank">
+            <img src="img/imagen2.jpg" alt="Proyecto 4">
+        </a>
+
+        <!-- Proyecto 5 -->
+        <a href="https://nelson22jg.github.io/TareaMedina2PaginaTercerCorte/" target="_blank">
+            <img src="img/machupicchu-wp1.jpg" alt="Proyecto 5">
+        </a>
+
+        <!-- Proyecto 6 -->
+        <a href="https://nelson22jg.github.io/TareaMedina1paginaTercer-corte/" target="_blank">
+            <img src="img/IMG CHICHEN ITZA.jpg" alt="Proyecto 6">
+        </a>
+        </div>
+    </section>
+
+   <!-- Sección de contacto -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Si deseas contactarme, puedes enviarme un correo electrónico a <a href="mailto:nelsongutierrez793@gmail.com">nelsongutierrez793@gmail.com</a></p>
+    <p>También puedes encontrarme en github como <a href="https://github.com/Nelson22jg">Nelson22jg</a></p>
+    <img class="logo-github" src="img/github-icon.png" alt="github">
+
+    <form action="submit-form.php" method="POST" onsubmit="mostrarMensaje()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+    <footer class="container">
+        <p>&copy; 2022 Nelson Gutierrez. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        function mostrarMensaje() {
+            alert("Tu mensaje ha sido enviado.");
+        }
+    </script>
+</body>
+</html>
